@@ -30,6 +30,14 @@
     z-index: 2;
   }
 
+  #header_content{
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    color: #26F53A;
+    font-size: 10.0em;
+  }
+
   h1{/*ƒ^ƒCƒgƒ‹*/
     font-family:gŸà–¾’©h, YuMincho, gƒqƒ‰ƒMƒm–¾’© ProN W3h, gHiragino Mincho ProNh, serif;
     background-image: url("img/crayonline.png"); 
@@ -38,7 +46,7 @@
     background-size: 100% 120%;
   }
   #main_contents {/* –{•¶(¬Œ©o‚µˆÈŠO) */
-    margin: 20% 10% 5% 10%;
+    margin: 5% 10% 5% 10%;
     font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
     color: #FFFFFF;
   }
