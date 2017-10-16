@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <title>はじめてのほげほげ</title>
+    <link rel="shortcut icon" href="icon/favicon.ico">
+
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="button.css" type="text/css">
+    <!-- スタイルシート -->
+
+    <!-- スクリプト -->
+    <script type="text/javascript" src="clock.js" charset="Shift-JIS"></script>
+    <script type="text/javascript" src="hyouji.js" charset="Shift-JIS"></script>
+    <!-- スクリプト -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- jQuery -->
+
+    <!-- 画像の表示用 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.css' />  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js'></script>
+    <!-- 画像の表示用 -->
+
+    <!-- サイトのフェードイン -->
+    <script>
+    $(function() {
+     
+      // 一旦hide()で隠してフェードインさせる
+      $('body').hide().fadeIn(1000);
+     
+    });
+    </script>
+    <!-- サイトのフェードイン -->
+
+</head>
+<body>
+
+<!-- ロード画面の設定 -->
+<div id="loader-bg">
+    <div id="loader">
+        <img src="img/loading.gif" width="80" height="80"/>
+    </div>
+</div>
+<!-- ロード画面の設定 -->
+
+<!-- ロード画面表示後に表示するコンテンツ -->
+<div id="wrap">
+
+    <!-- 表の表示非表示スクリプトの読み込み -->
+    <script type="text/javascript" src="hyou.js" charset="Shift-JIS"></script>
+    <!-- 表の表示非表示スクリプトの読み込み -->
+
+    <!-- 時計のスクリプト -->
+    <script>
+        setInterval("DspClk()", 100); //100msごとに更新(時計)
+    </script>
+    <!-- 時計のスクリプト -->
+
+    <!-- メインコンテンツ -->
+    <div id="main_contents">
+        <h1>球技クラスマッチ</h1>
+        <p class="main_contents_h">開催日&emsp;&emsp;10月30日(月)</p>
+        <p class="main_contents_h">開催場所</p>
+
+        <!-- 開催場所 -->
+        <table>
+            <thead>
+                <tr>
+                    <td>競技種目</td>
+                    <td>晴天時</td>
+                    <td>雨天時</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>サッカー</td>
+                    <td>piyopiyo</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr>
+                    <td>バレーボール</td>
+                    <td>piyopiyo</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr>
+                    <td>バスケットボール</td>
+                    <td>piyopiyo</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr>
+                    <td>アルティメット</td>
+                    <td>piyopiyo</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr>
+                    <td>ドッジボール</td>
+                    <td>piyopiyo</td>
+                    <td>hogehoge</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 開催場所 -->
+
+        <p class="main_contents_h">トーナメント表</p>
+
+        <!-- トーナメントボタン -->
+        <section class="buttons">
+            <div class="container">
+                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">サッカー</a>
+                <p style="display:inline;">&emsp;</p>
+                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">バレーボール</a>
+                <p style="display:inline;">&emsp;</p>
+                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">バスケットボール</a>
+                <p style="display:inline;">&emsp;</p>
+                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">アルティメット</a>
+                <p style="display:inline;">&emsp;</p>
+                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">ドッジボール</a>
+            </div>
+        </section>
+        <!-- トーナメントボタン -->
+
+        <p class="main_contents_h">タイムスケジュール</p>
+
+        <!-- タイムスケジュールボタン -->
+        <section class="buttons">
+            <div class="container">
+                <a class="btn btn-5" onclick="hyoji(0)">晴天時</a>
+                <p style="display:inline;">&emsp;&emsp;</p>
+                <a class="btn btn-6" onclick="hyoji(1)">雨天時</a>
+            </div>
+        </section>
+        <!-- タイムスケジュールボタン -->
+
+        <!-- 時計 -->
+        <p id="time">Loading...</p>
+        <!-- 時計 -->
+
+        <!-- 雨天時のタイムスケジュール -->
+        <table id="utenji" style="display:none">
+            <thead>
+                <tr>
+                    <td>ほげほげ</td>
+                    <td>ふがふが</td>
+                    <td>ころころ</td>
+                    <td>ふがふが</td>
+                    <td>ころころ</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="0">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehogeほげほげｆじゃをいｆじゃをｊふぉ；じぇ</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="1">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="2">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="3">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="4">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="5">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="6">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="7">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="8">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="9">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 雨天時のタイムスケジュール -->
+
+        <!-- 晴天時のタイムスケジュール -->
+        <table id="seitenji" style="display:table">
+            <thead>
+                <tr>
+                    <td>ほげほげ</td>
+                    <td>ふがふが</td>
+                    <td>ころころ</td>
+                    <td>ふがふが</td>
+                    <td>ころころ</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="0">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehogeほげほげｆじゃをいｆじゃをｊふぉ；じぇ</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="1">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="2">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="3">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="4">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="5">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="6">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="7">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="8">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="9">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 晴天時のタイムスケジュール -->
+
+    </div>
+    <!-- メインコンテンツ -->
+
+	<!-- リンクを張るところ -->
+	<div id="sitemap">
+
+	</div>
+	<!-- リンクを張るところ -->
+
+	<!-- フッター -->
+    <div id="footer" style="top: 0px; position: relative;">
+        <hr color="#fff"/>
+    Powered by <a href="http://sysken.y.kumamoto-nct.ac.jp/" class="link">SYSKEN</a> 2017
+    </div>
+    <!-- フッター -->
+
+</div>
+<!-- ロード画面表示後に表示するコンテンツ -->
+
+<!-- ロード画面 -->
+<script>
+$(function() {
+    var h = $(window).height();
+ 
+    $('#wrap').css('display','none');
+    $('#loader-bg ,#loader').height(h).css('display','block');
+});
+ 
+$(window).load(function () { //全ての読み込みが完了したら実行
+    $('#loader-bg').delay(900).fadeOut(800);
+    $('#loader').delay(600).fadeOut(300);
+    $('#wrap').css('display', 'block');
+});
+
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',5000);
+});
+
+function stopload(){
+  $('#wrap').css('display','block');
+  $('#loader-bg').delay(900).fadeOut(800);
+  $('#loader').delay(600).fadeOut(300);
+}
+</script>
+<!-- ロード画面 -->
+
+</body>
+</html>
