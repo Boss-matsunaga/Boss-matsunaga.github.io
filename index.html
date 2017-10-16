@@ -12,7 +12,7 @@
 
     <!-- スクリプト -->
     <script type="text/javascript" src="clock.js" charset="Shift-JIS"></script>
-    <script type="text/javascript" src="hyouji.js" charset="Shift-JIS"></script>
+    <script type="text/javascript" src="hyou.js" charset="Shift-JIS"></script>
     <!-- スクリプト -->
 
     <!-- jQuery -->
@@ -27,35 +27,74 @@
 
     <!-- サイトのフェードイン -->
     <script>
-    $(function() {
-     
+        $(function() {
+
       // 一旦hide()で隠してフェードインさせる
       $('body').hide().fadeIn(1000);
-     
-    });
-    </script>
-    <!-- サイトのフェードイン -->
+
+  });
+</script>
+<!-- サイトのフェードイン -->
 
 </head>
+
 <body>
-
-<!-- ロード画面の設定 -->
-<div id="loader-bg">
-    <div id="loader">
-        <img src="img/loading.gif" width="80" height="80"/>
+    <!-- ロード画面の設定 -->
+    <div id="loader-bg">
+        <div id="loader">
+            <img src="img/loading.gif" width="80" height="80"/>
+        </div>
     </div>
-</div>
-<!-- ロード画面の設定 -->
+    <!-- ロード画面の設定 -->
 
-<!-- ロード画面表示後に表示するコンテンツ -->
-<div id="wrap">
+    <!-- ロード画面表示後に表示するコンテンツ -->
+    <div id="wrap">
+        <!--<p id="page-top" style="bottom: 20px;"><a href="#">PAGE TOP</a></p>-->
 
-    <!-- 表の表示非表示スクリプトの読み込み -->
-    <script type="text/javascript" src="hyou.js" charset="Shift-JIS"></script>
-    <!-- 表の表示非表示スクリプトの読み込み -->
+        <!--<header>
+            <img src="img/logo_home2.png">
+        </header>-->
 
-    <!-- 時計のスクリプト -->
-    <script>
+        <ul class="ddmenu">
+   <li><a href="#">HOME</a></li>
+   <li><a href="#">ニュース</a>
+      <ul>
+         <li><a href="#">新製品</a></li>
+         <li><a href="#">新サービス</a></li>
+         <li><a href="#">弊社について</a></li>
+      </ul>
+   </li>
+   <li><a href="#">製品・技術</a>
+      <ul>
+         <li><a href="#">ハードウェア</a></li>
+         <li><a href="#">ソフトウェア</a></li>
+         <li><a href="#">ウェブサービス</a></li>
+      </ul>
+   </li>
+   <li><a href="#">会社情報</a>
+      <ul>
+         <li><a href="#">会社概要</a></li>
+         <li><a href="#">社長挨拶</a></li>
+         <li><a href="#">沿革</a></li>
+         <li><a href="#">所在地</a></li>
+      </ul>
+   </li>
+   <li><a href="#">お問い合わせ</a>
+      <ul>
+         <li><a href="#">よくあるご質問</a></li>
+         <li><a href="#">お問い合わせ先</a></li>
+      </ul>
+   </li>
+</ul>
+
+
+
+        <!-- 表の表示非表示スクリプトの読み込み -->
+        <script type="text/javascript" src="hyou.js" charset="Shift-JIS"></script>
+        <!-- 表の表示非表示スクリプトの読み込み -->
+
+        <!-- 時計のスクリプト -->
+        <script>
         setInterval("DspClk()", 100); //100msごとに更新(時計)
     </script>
     <!-- 時計のスクリプト -->
@@ -314,16 +353,16 @@
     </div>
     <!-- メインコンテンツ -->
 
-	<!-- リンクを張るところ -->
-	<div id="sitemap">
+    <!-- リンクを張るところ -->
+    <div id="sitemap">
 
-	</div>
-	<!-- リンクを張るところ -->
+    </div>
+    <!-- リンクを張るところ -->
 
-	<!-- フッター -->
+    <!-- フッター -->
     <div id="footer" style="top: 0px; position: relative;">
         <hr color="#fff"/>
-    Powered by <a href="http://sysken.y.kumamoto-nct.ac.jp/" class="link">SYSKEN</a> 2017
+        Powered by <a href="http://sysken.y.kumamoto-nct.ac.jp/" class="link">SYSKEN</a> 2017
     </div>
     <!-- フッター -->
 
@@ -332,13 +371,13 @@
 
 <!-- ロード画面 -->
 <script>
-$(function() {
-    var h = $(window).height();
- 
-    $('#wrap').css('display','none');
-    $('#loader-bg ,#loader').height(h).css('display','block');
-});
- 
+    $(function() {
+        var h = $(window).height();
+
+        $('#wrap').css('display','none');
+        $('#loader-bg ,#loader').height(h).css('display','block');
+    });
+
 $(window).load(function () { //全ての読み込みが完了したら実行
     $('#loader-bg').delay(900).fadeOut(800);
     $('#loader').delay(600).fadeOut(300);
