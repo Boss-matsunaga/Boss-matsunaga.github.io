@@ -1,0 +1,129 @@
+    body {
+            display: none;
+      margin: 0;
+      background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);/*³‹K‚ÌŽw’è*/
+    }
+
+  #loader-bg {/*ƒ[ƒh‰æ–Ê‚ÌƒXƒ^ƒCƒ‹*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #000;
+    z-index: 1;
+}
+#loader-bg #loader {/*ƒ[ƒh‰æ–Ê‚ÌƒXƒ^ƒCƒ‹*/
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+    h1{/*ƒ^ƒCƒgƒ‹*/
+      font-family:gŸà–¾’©h, YuMincho, gƒqƒ‰ƒMƒm–¾’© ProN W3h, gHiragino Mincho ProNh, serif;
+    	background-image: url("img/crayonline.png"); 
+    	  font-size: 3.5em;
+        text-shadow: 3px 3px 1px #000;
+    	background-size: 100% 120%;
+    }
+    #main_contents {/* –{•¶(¬Œ©o‚µˆÈŠO) */
+        margin: 20% 10% 5% 10%;
+        font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+        color: #FFFFFF;
+    }
+    .main_contents_h{/* –{•¶¬Œ©o‚µ */
+        text-align:left;
+        font-size: 2.0em
+    }
+    #time{/* ŽžŒv */
+      text-align:center;
+      font-size: 2.0em
+    }
+    table {/*•\‘S‘Ì*/
+    width:100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1%;
+      margin-bottom:0%; 
+      border-collapse: collapse;
+      text-align: center;
+      border: solid 2px #2F2F2F;/*•\‘S‘Ì‚ðü‚ÅˆÍ‚¤*/
+      background-color:white;
+      box-shadow:0px 0px 10px;/*‰e*/
+    }
+    table thead{/*•\‚Ìˆê”Ôã‚ÌƒZƒ‹*/
+      padding: 10px;
+      background-color:white;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    table td {/*‚»‚Ì‘¼‚ÌƒZƒ‹*/
+      padding: 10px;
+      width: 150px;
+      border-collapse: collapse;
+      border: solid 1px #2F2F2F;
+    color: #000000;
+    }
+
+#sitemap{
+  position: relative;
+    padding-top: 30%;
+    padding-right: 0;
+    padding-bottom: 0%;
+    padding-left: 0;
+    margin: 0;
+    background-color: #2F2F2F;
+}
+#le{
+  float: left;
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    
+    margin-left: 5%;
+    margin-bottom: 0%;
+    margin-top:  5%;
+
+}
+#ri{
+  float: right;
+    position: absolute;
+    bottom: 15%;
+    right: 0%;
+    
+    margin-right: 5%;
+    margin-bottom: 0%;
+    margin-top:  5%;
+
+}
+li{
+  padding-top:1%; 
+  padding-bottom:1%;
+  padding-right: 40%;
+  font-size: 1.25em;
+  list-style:none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#footer {/* ƒtƒbƒ^[ */
+    text-align: center;
+    font-size: 1.0em;
+    font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+    color: #fff;
+    background-color: #2F2F2F;
+
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
