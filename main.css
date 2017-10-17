@@ -5,6 +5,7 @@
   body {
     display: none;
     margin: 0;
+    color:white;
     background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);/*³‹K‚ÌŽw’è*/
   }
 
@@ -38,7 +39,7 @@
     font-size: 10.0em;
   }
 
-  h1{/*ƒ^ƒCƒgƒ‹*/
+  #subtitle{/*ƒ^ƒCƒgƒ‹*/
     font-family:gŸà–¾’©h, YuMincho, gƒqƒ‰ƒMƒm–¾’© ProN W3h, gHiragino Mincho ProNh, serif;
     background-image: url("img/crayonline.png"); 
     font-size: 3.5em;
@@ -86,41 +87,11 @@
 
   #sitemap{
     position: relative;
-    padding-top: 30%;
-    padding-right: 0;
-    padding-bottom: 0%;
-    padding-left: 0;
-    margin: 0;
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    padding-left: 5%;
     background-color: #2F2F2F;
-  }
-  #le{
-    float: left;
-    position: absolute;
-    bottom: 15%;
-    left: 10%;
-
-    margin-left: 5%;
-    margin-bottom: 0%;
-    margin-top:  5%;
-
-  }
-  #ri{
-    float: right;
-    position: absolute;
-    bottom: 15%;
-    right: 0%;
-
-    margin-right: 5%;
-    margin-bottom: 0%;
-    margin-top:  5%;
-
-  }
-  li{
-    padding-top:1%; 
-    padding-bottom:1%;
-    padding-right: 40%;
-    font-size: 1.25em;
-    list-style:none;
   }
   a{
     text-decoration: none;
@@ -139,101 +110,162 @@
     padding-bottom: 0;
     padding-left: 0;
   }
-/*#page-top a {
-    display: table-cell;
-    width: 6em;
-    height: 6em; 
-    adding: 5%;
+  #kyouen{
+    left: 50%;
     text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 1;
-    border-radius: 50%;
-    background: rgba(88,82,82,0.5);
-    behavior: url(PIE.htc);
-    text-decoration: none;
-    }*/
+    background: none;
+    margin: 0;
+    font-size: 5em;
+  }
 
-/*ドロップダウンメニュー関連*/
-    #dropmenu{
-  list-style-type: none;
-  width: 100%;
-  height: 40px;
-  margin: 0px auto 300px;
-  padding: 0;
-  background: #8a9b0f;
-  border-bottom: 5px solid #535d09;
-  border-radius: 3px 3px 0 0;
-}
-#dropmenu li{
-  position: relative;
-  width: 20%;
-  float: left;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-#dropmenu li a{
-  display: block;
-  margin: 0;
-  padding: 15px 0 11px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1;
-  text-decoration: none;
-}
-#dropmenu li:hover > a{
-  background: #6e7c0c;
-  color: #eff7b1;
-}
-#dropmenu > li:hover > a{
-  border-radius: 3px 3px 0 0;
-}
-#dropmenu li ul{
-  list-style: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  border-radius: 0 0 3px 3px;
-}
-#dropmenu li:last-child ul{
-  left: -100%;
-  width: 100%
-}
-#dropmenu li ul li{
-  overflow: hidden;
-  width: 200%;
-  height: 0;
-  color: #fff;
-  -moz-transition: .2s;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  -ms-transition: .2s;
-  transition: .2s;
-}
-#dropmenu li ul li a{
-  padding: 13px 15px;
-  background: #6e7c0c;
-  text-align: left;
-  font-size: 12px;
-  font-weight: normal;
-}
-#dropmenu li:hover ul li{
-  overflow: visible;
-  height: 38px;
-  border-top: 1px solid #7c8c0e;
-  border-bottom: 1px solid #616d0b;
-}
-#dropmenu li:hover ul li:first-child{
-  border-top: 0;
-}
-#dropmenu li:hover ul li:last-child{
-  border-bottom: 0;
-}
-#dropmenu li:hover ul li:last-child a{
-  border-radius: 0 0 3px 3px;
-}
+  /*ドロップダウンメニュー関連*/
+  #dropmenu{
+    list-style-type: none;
+    width: 100%;
+    top: 0px;
+    height: 40px;
+    margin: 0px;
+    padding: 0;
+    background: #8a9b0f;
+    border-bottom: 5px solid #535d09;
+    border-radius: 3px 3px 0 0;
+  }
+  #dropmenu li{
+    position: relative;
+    width: 33.33%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #dropmenu li a{
+    display: block;
+    margin: 0;
+    padding: 15px 0 11px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+  }
+  #dropmenu li:hover > a{
+    background: #6e7c0c;
+    color: #eff7b1;
+  }
+  #dropmenu > li:hover > a{
+    border-radius: 3px 3px 0 0;
+  }
+  #dropmenu li ul{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 3px 3px;
+  }
+  #dropmenu li:last-child ul{
+    left: -100%;
+    width: 100%
+  }
+  #dropmenu li ul li{
+    overflow: hidden;
+    width: 200%;
+    height: 0;
+    color: #fff;
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    transition: .2s;
+  }
+  #dropmenu li ul li a{
+    padding: 13px 15px;
+    background: #6e7c0c;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+  }
+  #dropmenu li:hover ul li{
+    overflow: visible;
+    height: 38px;
+    border-top: 1px solid #7c8c0e;
+    border-bottom: 1px solid #616d0b;
+  }
+  #dropmenu li:hover ul li:first-child{
+    border-top: 0;
+  }
+  #dropmenu li:hover ul li:last-child{
+    border-bottom: 0;
+  }
+  #dropmenu li:hover ul li:last-child a{
+    border-radius: 0 0 3px 3px;
+  }
+
+  /*footer*/
+  footer {
+    background-color: #555;
+    color: #ddd;
+    margin-top: 100px;
+    overflow: hidden;
+  }
+
+/*.footer-school-logo {
+    margin: 20px;
+    width: 60%;
+    height: auto;
+    }*/
+    .footer-item {
+      font-size: 18px;
+    }
+
+    .footer-item-top {
+      padding-top: 30px;
+    }
+    @media (min-width: 570px) {
+      .xs-hide {
+        display: none;
+      }
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    section {
+      margin: 0 auto;
+      margin-top: 60px;
+      max-width: 1000px;
+      padding: 20px 5px;
+      background: #eee;
+      background: rgba(255,255,255,0.6);
+      border-radius: 5px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin: 0 0 30px;
+    }
+
+    .center-box {
+      text-align: center;
+    }
+
+    #link{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    #sm{
+      font-size: 2.0em;
+      color: white;
+    }
+    #hehehe{
+      margin-left: 50%;
+      position: relative;
+      left: 20%;
+      bottom: 20%;
+         max-width: 25%;
+   height: auto;
+    }
