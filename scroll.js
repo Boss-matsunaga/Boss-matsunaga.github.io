@@ -1,5 +1,5 @@
 $(function(){
-    $('a[href^=#]').click(function() {
+    $('a[href^=#]').live('click',function() {
         var speed = 500;
         var href= $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
