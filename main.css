@@ -306,16 +306,14 @@
 		font-family:serif;
 	}
 
-	/*スマホハンバーガー用PC時消す*/
-	.nav-unshown {
-		display:none;
-	}
-	/*ハンバーガーアイコンをCSSだけで表現*/
-	#nav-open span, #nav-open span:before, #nav-open span:after {
+	/* ▽▽ハンバーガーメニュー▽▽
+	------------------------------------------------------- */
+	.hm_menu_check {/* チェックボックスを隠す */
 		display: none;
 	}
-	/*中身*/
-	#nav-content {
+	.hm_wrap {
 		display: none;
 	}
+/* △△ハンバーガーメニュー△△
+------------------------------------------------------- */
 }

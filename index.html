@@ -30,7 +30,6 @@
     <script type="text/javascript" src="clock.js" charset="Shift-JIS"></script>
     <script type="text/javascript" src="hyou.js" charset="Shift-JIS"></script>
     <script type="text/javascript" src="scroll.js" charset="Shift-JIS"></script>
-    <!--<script type="text/javascript" src="hamburger.js" charset="Shift-JIS"></script>-->
     <!-- スクリプト -->
 
     <!-- サイトのフェードイン -->
@@ -61,19 +60,28 @@ $('body').hide().fadeIn(1000);
         <!-- ヘッダー -->
         <header>
             <!-- <img src="img/logo_home2.png"> -->
-            <div id="nav-drawer">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">
-          <ul>
-            <li><a href="">SYSKEN WEB</a></li>
-            <li><a href="">SYSKEN twitter</a></li>
-          </ul>
-      </div>
-  </div>
             <div style="position: relative;">
-            <img src="img/kf2017_poster-001.jpg" alt="topimg"; width="100%";> 
+                <img src="img/kf2017_poster-001.jpg" alt="topimg"; width="100%";> 
+                <div style="position:absolute; top:50px; left:30px; width: 430px;">
+                    <!--▼▼ハンバーガーメニューここから▼▼-->
+                    <div class="hm_wrap">
+                        <input id="hm_menu" type="checkbox" name="hm_menu" class="hm_menu_check"/>
+                        <label for="hm_menu" class="hm_btn"></label>
+                        <h2 class="hm_title">ハンバーガーメニュー</h2>
+                        <nav class="hm_menu_wrap">
+                            <ul class="hm_list">
+                                <li><a href="#">テキスト</a></li>
+                                <li><a href="#">テキスト</a></li>
+                                <li><a href="#">テキスト</a></li>
+                                <li><a href="#">テキスト</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!--▲▲ハンバーガーメニューここまで▲▲-->
+                </div>
+            </div>
+            
+            
         </header>
         <!-- ヘッダー -->
         
@@ -85,27 +93,27 @@ $('body').hide().fadeIn(1000);
         <ul id="dropmenu">
             <li><a href="#">高専祭</a>
               <ul style="width:100%;">
-               <li><a href="#">ホーム</a></li>
-               <li><a href="#">グルメマップ</a></li>
-               <li><a href="#">タイムスケジュール</a></li>
-               <li><a href="#">球技大会</a></li>
-           </ul>
-       </li>
-       <li><a href="#">球技大会</a>
+                 <li><a href="#">ホーム</a></li>
+                 <li><a href="#">グルメマップ</a></li>
+                 <li><a href="#">タイムスケジュール</a></li>
+                 <li><a href="#">球技大会</a></li>
+             </ul>
+         </li>
+         <li><a href="#">球技大会</a>
           <ul style="width:100%;">
-           <li><a href="#place">開催場所</a></li>
-           <li><a href="#tournament">トーナメント表</a></li>
-           <li><a href="#schedule">タイムスケジュール</a></li>
-       </ul>
-   </li>
-   <li><a href="#">その他</a>
+             <li><a href="#place">開催場所</a></li>
+             <li><a href="#tournament">トーナメント表</a></li>
+             <li><a href="#schedule">タイムスケジュール</a></li>
+         </ul>
+     </li>
+     <li><a href="#">その他</a>
       <ul style="width:100%;">
-       <li><a href="http://www.kumamoto-nct.ac.jp/">学校HP</a></li>
-       <li><a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a></li>
-       <li><a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a></li>
-       <li><a href="https://twitter.com/nitky_kohokyoku">学生会twitter</a></li>
-   </ul>
-</li>
+         <li><a href="http://www.kumamoto-nct.ac.jp/">学校HP</a></li>
+         <li><a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a></li>
+         <li><a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a></li>
+         <li><a href="https://twitter.com/nitky_kohokyoku">学生会twitter</a></li>
+     </ul>
+ </li>
 </ul> 
 <!-- メニュー（PC） -->
 
