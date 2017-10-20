@@ -5,6 +5,11 @@
 		margin: 0;
 		background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);
 	}
+
+	header{
+		background-color: #8a9b0f
+	}
+
 	/* トーナメント表の画像 */
 	.images{
 		display: block;
@@ -299,5 +304,18 @@
 		font-size: 5em;
 		color: white;
 		font-family:serif;
+	}
+
+	/*スマホハンバーガー用PC時消す*/
+	.nav-unshown {
+		display:none;
+	}
+	/*ハンバーガーアイコンをCSSだけで表現*/
+	#nav-open span, #nav-open span:before, #nav-open span:after {
+		display: none;
+	}
+	/*中身*/
+	#nav-content {
+		display: none;
 	}
 }
