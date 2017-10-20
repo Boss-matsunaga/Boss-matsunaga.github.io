@@ -18,5 +18,4 @@ function DspClk() {
     for (i = 0; i < 10; i++) {
         if (!(Seconds % 10 == i)) document.getElementById(i).style.backgroundColor = "white";
     }
-    
 }

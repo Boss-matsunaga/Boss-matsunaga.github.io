@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
     <meta charset="utf-8">
-    <title>はじめてのほげほげ</title>
-    <link rel="shortcut icon" href="icon/favicon.ico">
+    <title>第9回熊本高専 高専祭 -饗宴-</title>
+    <link rel="shortcut icon" href="img/logo_home2.png">
+
+
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+
+    <!-- ※デフォルトのスタイル -->
+    <link rel="stylesheet" media="all" type="text/css" href="main.css" />
+
+    <!-- ※スマートフォン用のスタイル（smart.css） -->
+    <link rel="stylesheet" media="all" type="text/css" href="smart.css" />
+
 
     <!-- スタイルシート -->
-    <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="button.css" type="text/css">
     <!-- スタイルシート -->
 
@@ -19,26 +29,18 @@
     <!-- スクリプト -->
     <script type="text/javascript" src="clock.js" charset="Shift-JIS"></script>
     <script type="text/javascript" src="hyou.js" charset="Shift-JIS"></script>
-    <script src="scroll.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scroll.js" charset="Shift-JIS"></script>
+    <!--<script type="text/javascript" src="hamburger.js" charset="Shift-JIS"></script>-->
     <!-- スクリプト -->
-
-
-    <!-- 画像の表示用 -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.css' />  
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/lity/1.6.6/lity.js'></script>
-    <!-- 画像の表示用 -->
 
     <!-- サイトのフェードイン -->
     <script>
         $(function() {
-
-      // 一旦hide()で隠してフェードインさせる
-      $('body').hide().fadeIn(1000);
-
-  });
+// 一旦hide()で隠してフェードインさせる
+$('body').hide().fadeIn(1000);
+});
 </script>
 <!-- サイトのフェードイン -->
-
 </head>
 
 <body>
@@ -51,60 +53,68 @@
     <!-- ロード画面の設定 -->
 
     <!-- ロード画面表示後に表示するコンテンツ -->
-    <div id="wrap">
-        <!--<p id="page-top" style="bottom: 20px;"><a href="#">PAGE TOP</a></p>-->
-
-        <header>
-            <img src="img/logo_home2.png">
-            <h1 id = "kyouen">饗宴</h1>
-        </header>
-
-        <ul id="dropmenu">
-  <li><a href="#">高専祭</a>
-    <ul style="width:100%;">
-      <li><a href="#">ホーム</a></li>
-      <li><a href="#">グルメマップ</a></li>
-      <li><a href="#">タイムスケジュール</a></li>
-      <li><a href="#">球技大会</a></li>
-    </ul>
-  </li>
-  <li><a href="#">球技大会</a>
-    <ul style="width:100%;">
-      <li><a href="#basyo">開催場所</a></li>
-      <li><a href="#tournament">トーナメント表</a></li>
-      <li><a href="#schedule">タイムスケジュール</a></li>
-    </ul>
-  </li>
-  <li><a href="#">その他</a>
-    <ul style="width:100%;">
-      <li><a href="http://www.kumamoto-nct.ac.jp/">学校HP</a></li>
-      <li><a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a></li>
-      <li><a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a></li>
-      <li><a href="https://twitter.com/nitky_kohokyoku">学生会twitter</a></li>
-    </ul>
-  </li>
-</ul>
-
-
-
+    <div id="wrap">    
         <!-- 表の表示非表示スクリプトの読み込み -->
         <script type="text/javascript" src="hyou.js" charset="Shift-JIS"></script>
         <!-- 表の表示非表示スクリプトの読み込み -->
 
-        <!-- 時計のスクリプト -->
-        <script>
-        setInterval("DspClk()", 100); //100msごとに更新(時計)
-    </script>
-    <!-- 時計のスクリプト -->
+        <!-- ヘッダー -->
+        <header>
+            <!-- <img src="img/logo_home2.png"> -->
+            <div id="ham-menu">
+                <ul>
+                <li><a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a></li>
+                    <li><a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a></li>
+                    <li><a href="http://www.kumamoto-nct.ac.jp/">学校HP</a></li>
+                </ul>
+            </div>
+            <div id="menu-background"></div>
+            <h1 id = "kyouen">饗宴</h1>
+        </header>
+        <!-- ヘッダー -->
+        
+        <!-- スマホメニュー -->
+        
+        <!-- スマホメニュー -->
+        
+        <!-- メニュー（PC） -->
+        <ul id="dropmenu">
+            <li><a href="#">高専祭</a>
+              <ul style="width:100%;">
+               <li><a href="#">ホーム</a></li>
+               <li><a href="#">グルメマップ</a></li>
+               <li><a href="#">タイムスケジュール</a></li>
+               <li><a href="#">球技大会</a></li>
+           </ul>
+       </li>
+       <li><a href="#">球技大会</a>
+          <ul style="width:100%;">
+           <li><a href="#place">開催場所</a></li>
+           <li><a href="#tournament">トーナメント表</a></li>
+           <li><a href="#schedule">タイムスケジュール</a></li>
+       </ul>
+   </li>
+   <li><a href="#">その他</a>
+      <ul style="width:100%;">
+       <li><a href="http://www.kumamoto-nct.ac.jp/">学校HP</a></li>
+       <li><a href="http://sysken.y.kumamoto-nct.ac.jp/">SYSKEN WEB</a></li>
+       <li><a href="https://twitter.com/sysken_ynct">SYSKEN twitter</a></li>
+       <li><a href="https://twitter.com/nitky_kohokyoku">学生会twitter</a></li>
+   </ul>
+</li>
+</ul> 
+<!-- メニュー（PC） -->
 
-    <!-- メインコンテンツ -->
-    <div id="main_contents">
-        <h1 id = "subtitle">球技クラスマッチ</h1>
-        <p class="main_contents_h">開催日&emsp;&emsp;10月30日(月)</p>
-        <h1 id="basyo"></h1>
-        <p class="main_contents_h">開催場所</p>
-        <!-- 開催場所 -->
-        <table>
+<!-- メインコンテンツ -->
+<div id="main_contents">
+    <h1 id="secondtitle">球技クラスマッチ</h1>
+    <p class="main_contents_h"><span class="under">開催日</span>&emsp;&emsp;10月30日(月)</p>
+    <h1 id="basyo"></h1>
+    <p class="main_contents_h"><span class="under">開催場所</span></p>
+
+    <!-- 開催場所 -->
+    <div class="scroll">
+        <table class="hyou">
             <thead>
                 <tr>
                     <td>競技種目</td>
@@ -140,44 +150,43 @@
                 </tr>
             </tbody>
         </table>
-        <!-- 開催場所 -->
+    </div>
+    <!-- 開催場所 -->
 
-        <h1 id="tournament"></h1>
-        <p class="main_contents_h">トーナメント表</p>
+    <h1 id="tournament"></h1>
+    <p class="main_contents_h"><span class="under">トーナメント表</span></p>
 
-        <!-- トーナメントボタン -->
-        <section class="buttons">
-            <div class="container">
-                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">サッカー</a>
-                <p style="display:inline;">&emsp;</p>
-                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">バレーボール</a>
-                <p style="display:inline;">&emsp;</p>
-                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">バスケットボール</a>
-                <p style="display:inline;">&emsp;</p>
-                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">アルティメット</a>
-                <p style="display:inline;">&emsp;</p>
-                <a class="btn btn-4" href="img/hoge.jpg" data-lity="data-lity">ドッジボール</a>
-            </div>
-        </section>
-        <!-- トーナメントボタン -->
+    <!-- トーナメント -->
+    <p class="main_contents_h2">サッカー</p>
+    <img class="images" src="img/hoge.jpg">
+    <p class="main_contents_h2">バレーボール</p>
+    <img class="images" src="img/hoge.jpg">
+    <p class="main_contents_h2">バスケットボール</p>
+    <img class="images" src="img/hoge.jpg">
+    <p class="main_contents_h2">アルティメット</p>
+    <img class="images" src="img/hoge.jpg">
+    <p class="main_contents_h2">ドッヂボール</p>
+    <img class="images" src="img/hoge.jpg">
+    <!-- トーナメント -->
 
-        <h1 id="schedule"></h1>
-        <p class="main_contents_h">タイムスケジュール</p>
+    <h1 id="schedule"></h1>
+    <p id="schedule" class="main_contents_h"><span class="under">タイムスケジュール</span></p>
 
-        <!-- タイムスケジュールボタン -->
-        <section class="buttons">
-            <div class="container">
-                <a class="btn btn-5" onclick="hyoji(0)">晴天時</a>
-                <p style="display:inline;">&emsp;&emsp;</p>
-                <a class="btn btn-6" onclick="hyoji(1)">雨天時</a>
-            </div>
-        </section>
-        <!-- タイムスケジュールボタン -->
+    <!-- タイムスケジュールボタン -->
+    <section class="buttons">
+        <div class="container">
+            <a class="btn btn-5" onclick="hyoji(0)">晴天時</a>
+            <p style="display:inline;">&emsp;&emsp;</p>
+            <a class="btn btn-6" onclick="hyoji(1)">雨天時</a>
+        </div>
+    </section>
+    <!-- タイムスケジュールボタン -->
 
-        <!-- 時計 -->
-        <p id="time">Loading...</p>
-        <!-- 時計 -->
+    <!-- 時計 -->
+    <p id="time">Loading...</p>
+    <!-- 時計 -->
 
+    <div class="scroll">
         <!-- 雨天時のタイムスケジュール -->
         <table id="utenji" style="display:none">
             <thead>
@@ -263,149 +272,136 @@
             </tbody>
         </table>
         <!-- 雨天時のタイムスケジュール -->
+    </div>
 
+    <div class="scroll">
         <!-- 晴天時のタイムスケジュール -->
         <table id="seitenji" style="display:table">
-            <tbody>
-                <tr BGCOLOR="#26F53A">
-                    <td align="center" colspan="3">時間</td>
-                    <td align="center" colspan="3">グラウンド</td>
-                    <td align="center" colspan="3">第一体育館</td>
-                    <td align="center" colspan="3">第二体育館</td>
-                    <td align="center" colspan="3">ハンドボール場</td>
-                    <td align="center" colspan="3">野球場</td>
-                </tr>
+            <thead>
                 <tr>
-                    <td align="center" colspan="3" id = "1-0">9:00~9:30</td>
-                    <td align="center" colspan="3" id = "1-1">サッカー<br>AC vs MI</td>
-                    <td align="center" colspan="3" id = "1-2">サッカー<br>AC vs MI</td>
-                    <td align="center" colspan="3" id = "1-3">サッカー<br>AC vs MI</td>
-                    <td align="center" colspan="3" id = "1-4">サッカー<br>AC vs MI</td>
-                    <td align="center" colspan="3" id = "1-5">サッカー<br>AC vs MI</tdg>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "2-0">9:30~10:00</td>
-                        <td align="center" colspan="3" id = "2-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "2-2">サッカー<br>AC vs MI</td> 
-                        <td align="center" colspan="3" id = "2-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "2-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "2-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "3-0">10:00~10:30</td>
-                        <td align="center" colspan="3" id = "3-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "3-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "3-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "3-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "3-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "4-0">10:30~11:00</td>
-                        <td align="center" colspan="3" id = "4-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "4-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "4-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "4-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "4-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "5-0">11:00~11:30</td>
-                        <td align="center" colspan="3" id = "5-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "5-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "5-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "5-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "5-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "6-0">11:30~12:00</td>
-                        <td align="center" colspan="3" id = "6-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "6-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "6-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "6-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "6-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "13-0">12:00~13:00</td>
-                        <td align="center" colspan="15" id = 13-1>昼休み</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "7-0">13:00~13:30</td>
-                        <td align="center" colspan="3" id = "7-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "7-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "7-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "7-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "7-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "8-0">13:30~14:00</td>
-                        <td align="center" colspan="3" id = "8-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "8-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "8-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "8-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "8-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "9-0">14:00~14:30</td>
-                        <td align="center" colspan="3" id = "9-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "9-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "9-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "9-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "9-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "10-0">14:30~15:00</td>
-                        <td align="center" colspan="3" id = "10-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "10-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "10-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "10-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "10-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "11-0">15:00~15:30</td>
-                        <td align="center" colspan="3" id = "11-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "11-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "11-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "11-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "11-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                    <tr>
-                        <td align="center" colspan="3" id = "12-0">15:30~16:00</td>
-                        <td align="center" colspan="3" id = "12-1">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "12-2">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "12-3">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "12-4">サッカー<br>AC vs MI</td>
-                        <td align="center" colspan="3" id = "12-5">サッカー<br>AC vs MI</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <td>ほげほげ</td>
+                    <td>ふがふが</td>
+                    <td>ころころ</td>
+                    <td>ふがふが</td>
+                    <td>ころころ</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="0">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehogeほげほげｆじゃをいｆじゃをｊふぉ；じぇ</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="1">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="2">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="3">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="4">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="5">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="6">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="7">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="8">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+                <tr id="9">
+                    <td>10:00</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                    <td>hogehoge</td>
+                </tr>
+            </tbody>
+        </table>
         <!-- 晴天時のタイムスケジュール -->
-
     </div>
-    <!-- メインコンテンツ -->
-
-    <!-- リンクを張るところ -->
-    <div id="sitemap">
-    <div id = "link">
-    　　<a style = "display: table;" id = "sm">サイトマップ</a>
-      <a style = "display: table;" href="information.html" class="footer-item">校内マップ</a>
-      <a style = "display: table;" href="planning.html" class="footer-item">高専祭本祭</a>
-      <a style = "display: table;" href="https://guccisan.github.io/hehehe.html" class="footer-item">球技大会</a>
-      <a style = "display: table;" href="http://sysken.y.kumamoto-nct.ac.jp/" class="footer-item">SYSKEN WEB</a>
-      <a style = "display: table;" href="https://twitter.com/sysken_ynct" class="footer-item">SYSKEN twitter</a>
-      <a style = "display: table;" href="https://twitter.com/nitky_kohokyoku" class="footer-item">学生会twitter</a>
-      <a style = "display: table;" href="http://www.kumamoto-nct.ac.jp/" class="footer-item">熊本高専HP</a>
-      </div>
-          <!-- <img id ="hehehe" src="img/hoge.jpg"> -->
-    </div>
-    <!-- リンクを張るところ -->
-    <!-- フッター -->
-    <div id="footer" style="top: 0px; position: relative;">
-        <hr color="#fff"/>
-        Powered by <a href="http://sysken.y.kumamoto-nct.ac.jp/" class="link">SYSKEN</a> 2017
-    </div>
-    <!-- フッター -->
 
 </div>
+<!-- メインコンテンツ -->
+
+<!-- リンクを張るところ -->
+<div id="sitemap">
+    <div id = "link">
+        <a style = "display: table;" id = "sm">サイトマップ</a>
+        <a id="space">&emsp;</a>
+        <a id="wow" style = "display: table;" href="information.html" class="footer-item">校内マップ</a>
+        <a id="wow" style = "display: table;" href="planning.html" class="footer-item">高専祭本祭</a>
+        <a id="wow" style = "display: table;" href="#" class="footer-item">球技大会</a>
+        <a id="wow" style = "display: table;" href="http://sysken.y.kumamoto-nct.ac.jp/" class="footer-item">SYSKEN WEB</a>
+        <a id="wow" style = "display: table;" href="https://twitter.com/sysken_ynct" class="footer-item">SYSKEN twitter</a>
+        <a id="wow" style = "display: table;" href="https://twitter.com/nitky_kohokyoku" class="footer-item">学生会twitter</a>
+        <a id="wow" style = "display: table;" href="http://www.kumamoto-nct.ac.jp/" class="footer-item">熊本高専HP</a>
+    </div>
+    <div id = "imag_area">
+        <img id="imgs" src="img/logo_home.png">
+    </div>
+</div>
+<!-- リンクを張るところ -->
+
+<!-- フッター -->
+<div id="footer" style="top: 0px; position: relative;">
+    <hr color="#fff"/>
+    ©Powered by <a href="http://sysken.y.kumamoto-nct.ac.jp/" class="link" id="wow">SYSKEN</a> 2017
+</div>
+<!-- フッター -->
+</div>
 <!-- ロード画面表示後に表示するコンテンツ -->
+
+<!-- ページの一番上に移動 -->
+<p id="page-top"><a href="#">PAGE TOP</a></p>
+<!-- ページの一番上に移動 -->
+
+<!-- 時計のスクリプト -->
+<script>
+	setInterval("DspClk()", 100); //100msごとに更新(時計)
+</script>
+<!-- 時計のスクリプト -->
 
 <!-- ロード画面 -->
 <script>
@@ -424,13 +420,13 @@ $(window).load(function () { //全ての読み込みが完了したら実行
 
 //10秒たったら強制的にロード画面を非表示
 $(function(){
-  setTimeout('stopload()',5000);
+    setTimeout('stopload()',100);
 });
 
 function stopload(){
-  $('#wrap').css('display','block');
-  $('#loader-bg').delay(900).fadeOut(800);
-  $('#loader').delay(600).fadeOut(300);
+    $('#wrap').css('display','block');
+    $('#loader-bg').delay(900).fadeOut(800);
+    $('#loader').delay(600).fadeOut(300);
 }
 </script>
 <!-- ロード画面 -->

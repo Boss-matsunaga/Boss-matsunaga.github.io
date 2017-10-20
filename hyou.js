@@ -23,3 +23,10 @@ function hyoji(num)
 	});
   }
 }
+
+$(function(){
+    $('#page-top').click(function () {
+        //id名#pagetopがクリックされたら、以下の処理を実行
+        $("html,body").animate({scrollTop:0},"500");
+    });
+});

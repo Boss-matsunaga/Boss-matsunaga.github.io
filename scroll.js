@@ -7,7 +7,8 @@
         $($.browser.safari ? 'body' : 'html').animate({scrollTop:position}, speed, 'swing');
         return false;
     });
-});*/
+});
+*/
 
 $(function(){
    // #で始まるアンカーをクリックした場合に処理
@@ -24,4 +25,4 @@ $(function(){
       $('body,html').animate({scrollTop:position}, speed, 'swing');
       return false;
    });
-});
+})

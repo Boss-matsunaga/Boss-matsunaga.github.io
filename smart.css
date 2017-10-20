@@ -1,0 +1,261 @@
+  /*===============================================
+  ●smart.css  画面の横幅が640pxまで
+  ===============================================*/
+  @media screen and (max-width: 768px){
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #001e43 0%, #C06645 100%);
+      /*background-color: white;*/
+    }
+    .hyou{
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+    /* トーナメント表の画像 */
+    .images{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: auto;
+      max-width: 640px;
+    }
+    #dropmenu{
+     display:none; 
+   }
+   #loader-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #000;
+    z-index: 1;
+  }
+  #loader-bg #loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+  }
+  #secondtitle {
+    font-family: "YuMincho", serif;
+    background-image: url("img/crayonline.png"); 
+    font-size: 2.25em;
+    font-weight: normal;
+    text-shadow: 3px 3px 1px #555;
+    background-size: 100% 120%;
+    margin-top:1%;
+  }
+  /* リンクの書式 */
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  #main_contents {
+    margin: 10% 3% 10% 3%;
+    font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+    color: #fff;
+  }
+  .main_contents_h{
+    text-align:left;
+    font-size: 1.25em;
+  }
+  .under{
+   font-weight: bold;
+   background: linear-gradient(transparent 50%, #1e90ff 50%);
+ }
+ #time{/* ŽžŒv */
+  text-align:center;
+  font-size: 1.25em
+}
+table {/*•\‘S‘Ì*/
+  white-space: nowrap;　　/*tableのセル内にある文字の折り返しを禁止*/
+
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  margin-bottom:0%; 
+  border-collapse: collapse;
+  text-align: center;
+  border: solid 2px #2F2F2F;/*•\‘S‘Ì‚ðü‚ÅˆÍ‚¤*/
+  background-color:white;
+  /*box-shadow:0px 0px 10px;*/
+}
+table thead{/*•\‚Ìˆê”Ôã‚ÌƒZƒ‹*/
+  padding: 10px;
+  background-color:white;
+  font-weight: bold;
+  font-size: 1.0em;
+}
+table td {/*‚»‚Ì‘¼‚ÌƒZƒ‹*/
+  padding: 10px;
+  width: 150px;
+  border-collapse: collapse;
+  border: solid 1px #2F2F2F;
+  color: #000000;
+  font-size: 1.0em;
+}
+#footer {/* ƒtƒbƒ^[ */
+  text-align: center;
+  font-size: 1.0em;
+  font-family: "Yu Gothic UI","Meiryo UI","ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+  color: #fff;
+  background-color: #2F2F2F;
+
+  margin-top: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+#sitemap{
+  position: relative;
+  padding-top: 30%;
+  padding-right: 0;
+  padding-bottom: 0%;
+  padding-left: 0;
+  margin: 0;
+  background-color: #2F2F2F;
+}
+
+#footer a{
+ color: #fff;
+ text-decoration: none; 
+}
+#page-top {
+  position: fixed !important;  
+  position: relative;  
+  bottom: 1%;
+  right: 1%;
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  background: rgba(88,82,82,0.5);
+}
+
+#page-top a{
+  text-align: center;
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+  color: #fff;
+  text-decoration: none; 
+  font-family:sans-serif;
+}
+.container a{
+  display: table;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+/* サイトマップのリンク群 */
+#link{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+/* サイトマップの見出し */
+#sm{
+  font-size: 2.0em;
+  color: white;
+}
+/* サイトマップ */
+#sitemap{
+  position: relative;
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  background-color: #2F2F2F;
+  font-family:sans-serif;
+}
+/* メニュー画面 */
+#dropmenu{
+  display: none;
+}
+/* 饗宴 */
+#kyouen {
+  left: 50%;
+  text-align: center;
+  background: none;
+  margin: 0;
+  font-size: 5em;
+  font-weight: normal;
+  color: white;
+  font-family:serif;
+}
+/* サイトパップの空行 */
+#space{
+  display: none;
+}
+/* サイトマップの画像 */
+#imag_area{
+  display: none;
+}
+.scroll{
+  overflow: auto;　　　　/*tableをスクロールさせる*/
+}
+
+/*メニュー部分*/
+#ham-menu {
+  background-color: #2F2F2F; /*メニュー背景色*/
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px 40px; /*メニュー内部上下左右余白*/
+  position: fixed;
+  right: -300px; /*メニュー横幅①と合わせる*/
+  top: 0;
+  transition: transform 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 300px; /*メニュー横幅①*/
+  z-index: 1000;
+}
+
+/*メニューアイコン部分は疑似要素で*/
+#ham-menu::before {
+  background-color: #2F2F2F; /*ボタン部分背景色*/
+  border-radius: 0 0 0 10px; /*左下角丸*/
+  color: #fff; /*アイコン（フォント）色*/
+  content: "≡"; /*メニューアイコン*/
+  display: block;
+  font-size: 50px; /*アイコン（フォント）サイズ*/
+  height: 50px;
+  line-height: 50px; /*縦位置中央化*/
+  position: absolute;
+  right: 100%;
+  text-align: center;
+  top: 0;
+  width: 50px;
+}
+
+/*透過背景部分*/
+#menu-background {
+  background-color: #333; /*黒背景部分背景色*/
+  display: block;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s linear 0s; /*0.3s は変化するのにかかる時間*/
+  width: 100%;
+  z-index: -1;
+}
+
+/*hover 時の処理*/
+#ham-menu:hover {
+  transform: translate(-300px); /*メニュー横幅①と合わせる*/
+}
+
+#ham-menu:hover + #menu-background {
+  opacity: 0.5; /*黒背景部分透過度*/
+  z-index: 999;
+}
+}
